@@ -1,0 +1,445 @@
+@charset "UTF-8";
+body {
+  margin: 0 .5em;
+}
+
+.navbar .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.navbar .container ul li {
+  padding-left: 1.5em;
+  list-style-type: none;
+  font-size: .9em;
+}
+
+.navbar .container ul li a {
+  text-decoration: none;
+  color: #2b2a2a;
+}
+
+.navbar .container ul li :hover {
+  color: goldenrod;
+  border-bottom: 2px solid red;
+}
+
+.navbar .container ul li .active {
+  content: "";
+  display: block;
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod;
+}
+
+.header {
+  height: 50vh;
+  width: 100%;
+  background-image: url("/assets/croissant.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .container {
+  margin-top: -1em;
+}
+
+.header .container h1 {
+  padding-top: 2.5em;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.header .container .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -1em 7em;
+}
+
+.header .container .cta .discover {
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 3em;
+}
+
+.header .container .cta .discover button {
+  margin: 2px 1.5px;
+  height: 3em;
+  width: 8em;
+  font-size: .9rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+  mix-blend-mode: screen;
+  cursor: pointer;
+}
+
+.header .container .cta .discover button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header .container .cta .shop {
+  margin-left: 1em;
+  border: 3px double white;
+  border-radius: 3px;
+  text-align: center;
+  height: 3em;
+  width: 8em;
+  color: white;
+  font-size: .9rem;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.header .container .cta .shop a {
+  text-decoration: none;
+  color: white;
+}
+
+.products .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .6em auto;
+}
+
+.products .container img {
+  margin-right: 4.5px;
+  margin-left: 2px;
+  height: 7em;
+  width: 9.5em;
+}
+
+.products .container h1 {
+  font-size: .68em;
+  font-weight: 900;
+  text-align: center;
+  margin-top: .5em;
+}
+
+.products .container h2 {
+  display: none;
+}
+
+.products .container p {
+  text-align: center;
+  font-size: .5em;
+  font-weight: 600;
+  color: goldenrod;
+}
+
+.products .container a {
+  text-decoration: none;
+}
+
+.products .container hr {
+  margin-top: -.3em;
+  border-top: 1px solid goldenrod;
+  width: 1em;
+}
+
+.daily_offers {
+  height: 40vh;
+  width: 100%;
+  background-image: url("/assets/Les cookies à la farine de petit épeautre _ Carnets Parisiens.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -.1em;
+}
+
+.daily_offers .backgroundblur {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.daily_offers .backgroundblur .container {
+  margin-left: 14em;
+  text-align: center;
+  color: white;
+  padding-top: 2.5em;
+}
+
+.daily_offers .backgroundblur .container h1 {
+  font-size: 1.8rem;
+}
+
+.daily_offers .backgroundblur .container p {
+  margin-top: -1.2em;
+  font-size: .8rem;
+  margin-right: 1.1px;
+}
+
+.daily_offers .backgroundblur .container button {
+  background-color: goldenrod;
+  border: none;
+  height: 2.5em;
+  width: 8em;
+}
+
+.daily_offers .backgroundblur .container button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: .9em;
+}
+
+.inventory .container .special-text {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.inventory .container .special-text h2 {
+  color: goldenrod;
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inventory .container .special-text h1 {
+  margin-top: -0.5em;
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: bold;
+  font-family: monospace;
+}
+
+.inventory .container .special-text p {
+  margin-top: -1em;
+  font-size: .8em;
+  font-weight: 300;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+.inventory .container .pastries {
+  margin: 2.5em 3em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.inventory .container .pastries img {
+  height: 4em;
+  width: 5em;
+}
+
+.inventory .container .pastries h3 {
+  font-size: .9em;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.inventory .container .pastries h4 {
+  margin-top: -1em;
+  font-size: .7em;
+  font-weight: 300;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.inventory .container .pastries p {
+  margin-top: -1em;
+  font-size: .6em;
+  font-weight: 300;
+  font-style: italic;
+  font-family: cursive;
+  margin-bottom: 3em;
+}
+
+.footer {
+  background-image: url(/assets/Macaroons.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .footer-text {
+  position: relative;
+  top: 5em;
+  left: 1em;
+}
+
+.footer .container .footer-text h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer .container .footer-text p {
+  font-size: .7em;
+  font-weight: 500;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 23em;
+}
+
+.footer .container button {
+  height: 2.2em;
+  width: 6.5em;
+  background-color: #a37a11;
+  border: none;
+  border-radius: 5px;
+  margin: 9em auto 2em;
+  margin-right: 3em;
+}
+
+.footer .container button a {
+  text-decoration: none;
+  color: white;
+  font-size: .7em;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (min-width: 760px) {
+  body {
+    margin: 0 1em;
+  }
+  .navbar .container ul li {
+    font-size: 1.2rem;
+  }
+  .header {
+    height: 70vh;
+    background-position: center;
+  }
+  .header .container h1 {
+    padding-top: 2em;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .header .container .cta {
+    margin-top: -2em;
+    margin-right: 7.5em;
+  }
+  .header .container .cta .discover {
+    border-radius: 3px;
+    height: 3.6em;
+    margin-right: 1em;
+  }
+  .header .container .cta .discover button {
+    margin: 2px 1.5px;
+    height: 3em;
+    width: 11em;
+    font-size: 1.1rem;
+  }
+  .header .container .cta .shop {
+    height: 2.9em;
+    width: 11em;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .products .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .products .container img {
+    height: 13em;
+    width: 18em;
+  }
+  .products .container h1 {
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+  .products .container h2 {
+    display: inline-block;
+    width: 70%;
+    margin-top: -0.8em;
+    font-size: .8em;
+    font-weight: 500;
+    font-family: cursive;
+  }
+  .products .container p {
+    font-size: .7em;
+    margin-top: 0.1em;
+  }
+  .products .container hr {
+    margin-top: -.3em;
+    border-top: 1px solid goldenrod;
+    width: 2em;
+  }
+  .daily_offers {
+    height: 60vh;
+    background-position: center;
+  }
+  .daily_offers .backgroundblur .container {
+    margin: 0 1em;
+    position: absolute;
+    right: 5em;
+    padding-top: 5em;
+  }
+  .daily_offers .backgroundblur .container h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .inventory .container .special-text h1 {
+    margin-top: 0;
+    font-size: 3em;
+  }
+  .inventory .container .special-text p {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: -1em;
+  }
+  .inventory .container .pastries {
+    margin: 2.5em 3em 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 2em;
+  }
+  .footer {
+    height: 50vh;
+    margin: 2em 0;
+  }
+  .footer .container .footer-text {
+    margin: 0 3em;
+  }
+  .footer .container .footer-text h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  .footer .container .footer-text p {
+    font-size: .9em;
+    font-weight: 400;
+    margin-top: -1em;
+    width: 25em;
+  }
+  .footer .container button {
+    height: 3.3em;
+    width: 9.75em;
+    margin: 11em auto 0;
+    margin-right: 15em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
